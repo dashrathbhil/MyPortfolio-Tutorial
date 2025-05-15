@@ -45,4 +45,19 @@ p{
   font-weight: 600!important; 
 }
 
+.codebox {
+  overflow-x: auto;   /* enable horizontal scroll inside the box */
+  white-space: pre;   /* keep code on one line without wrapping */
+  max-width: 100%;    /* avoid exceeding parent container width */
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-family: monospace;
+  font-size: 0.9rem;
+  /* optional smooth scrolling */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #333;
+}
+
 

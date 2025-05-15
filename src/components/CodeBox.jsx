@@ -21,17 +21,23 @@ function CodeBox({ code, language = "javascript" }) {
   };
 
   return (
-    <div className="position-relative mb-4">
-      <pre className="rounded overflow-auto">
-        <code className={`language-${language}`}>{code}</code>
-      </pre>
-      <button
-        className="btn btn-light btn-sm position-absolute top-0 end-0 m-2"
-        onClick={handleCopy}
-      >
-        {copied ? "Copied!" : "Copy"}
-      </button>
-    </div>
+    <>
+    <div
+  className="position-relative mb-4"
+  // style={{ maxWidth: "90%" }}
+>
+  <pre className="rounded overflow-auto" style={{ whiteSpace: "pre", margin: 0 }}>
+    <code className={`language-${language}`}>{code}</code>
+  </pre>
+  <button
+    className="btn btn-light btn-sm position-absolute top-0 end-0 m-2"
+    onClick={handleCopy}
+  >
+    {copied ? "Copied!" : "Copy"}
+  </button>
+</div>
+
+        </>
   );
 }
 
