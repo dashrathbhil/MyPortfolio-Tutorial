@@ -1,0 +1,48 @@
+:root {
+  --jost-font-family: 'Jost', sans-serif;
+  --rubic-font-family: 'Rubic', sans-serif;
+  --poppins-font-family: 'Poppins', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--rubic-font-family)!important;
+}
+p{
+  font-family: var(--poppins-font-family)!important;
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 60px;
+}
+
+.no-gutter{
+    --bs-gutter-x: 0!important;
+}
+
+
+
+
+/* Style the links */
+.sidebar ul  li a {
+  font-size: 1rem !important;
+  color: #333 !important; 
+  transition: color 0.3s ease-in-out !important;
+  padding-left: 3rem;
+}
+
+
+
+
+
+/* Style for active link */
+.active-link {
+  background-color: #007bff !important;  
+  color: #fff !important; 
+  font-weight: 600!important; 
+}
+
+
