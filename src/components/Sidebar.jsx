@@ -5,8 +5,6 @@ import reactTopics from "../pages/react-tutorials/datatopics/ReactTopics";
 function Sidebar() {
   return (
     <div className="sidebar bg-light">
-      {/* <h5 className="fw-bold mb-4 text-primary ps-4">React Tutorial</h5> */}
-
       <ul className="list-unstyled">
         {reactTopics.map((section, sectionIndex) => (
           <li key={sectionIndex} className="mb-4">
@@ -15,7 +13,7 @@ function Sidebar() {
               {section.topics.map((topic, topicIndex) => (
                 <li key={topicIndex} className="">
                   <NavLink
-                    to={topic.path === "" ? "." : topic.path} // handle empty path
+                    to={topic.path === "" ? "." : topic.path} 
                     end
                     className={({ isActive }) =>
                       `text-decoration-none d-block py-1 ${
